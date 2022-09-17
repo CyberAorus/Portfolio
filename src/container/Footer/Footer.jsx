@@ -15,8 +15,8 @@ const Footer = () => {
         setFormData({ ...formData, [name]: value });
     }
 
-    const handleSubmit = () => {
-
+    const handleSubmit = (e) => {
+        e.preventDefault();
         setIsLoading(true);
 
         const contact = {
